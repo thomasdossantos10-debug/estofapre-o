@@ -42,7 +42,7 @@
   </div><p class="helper">Os adicionais são somados sobre o valor-base, sem juros compostos entre eles.</p></section>
   <section class="card hidden" id="contactCard"><div class="alert"><strong>Necessário falar com a TS Clean</strong><span id="contactMessage">Este item precisa de avaliação antes de informar o valor.</span></div></section>
   <section class="card result hidden" id="resultCard"><div class="result-top"><div><div class="result-label">Valor do serviço</div><div class="result-value" id="resultValue">R$ 0,00</div><div class="result-note" id="resultNote"></div></div><div class="pill">Tabela TS Clean</div></div><div class="breakdown" id="breakdown"></div><div class="actions"><button class="btn secondary" id="resetBtn">Novo cálculo</button></div></section>
-  <div class="smallprint">Valores de referência da TS Clean. Itens fora das configurações previstas ou em condição especial podem exigir avaliação.</div>
+  <div class="smallprint">Valores de referência da TS Clean. Itens fora das configurações previstas ou em condição especial podem exigir avaliação. • v3</div>
 </main>
 <script>
 const PRICES=[
@@ -106,7 +106,7 @@ els.category.addEventListener("change",e=>{state.category=e.target.value;state.m
 els.model.addEventListener("change",e=>{state.model=e.target.value;state.size="";updateSizes();els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden")});
 els.size.addEventListener("change",e=>{state.size=e.target.value;els.rangeHelp.textContent=state.category==="Sofá"?"Use a faixa aproximada de largura para escolher pequeno ou grande.":"";calculate()});els.extras.forEach(i=>i.addEventListener("change",calculate));
 els.resetBtn.addEventListener("click",()=>{state={service:"",category:"",model:"",size:""};els.serviceButtons.forEach(b=>b.classList.remove("active"));setOptions(els.category,"Selecione primeiro o serviço",[]);setOptions(els.model,"Selecione o tipo de estofado",[]);setOptions(els.size,"Selecione o modelo",[]);clearExtras();els.extrasCard.classList.add("hidden");els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden");els.rangeHelp.textContent="";window.scrollTo({top:0,behavior:"smooth"})});
-if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=3").catch(()=>{}))}
 </script>
 </body>
 </html>
