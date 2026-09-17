@@ -46,15 +46,16 @@
 </main>
 <script>
 const PRICES=[
-{category:"Sofá",model:"2 lugares",size:"Pequeno — aprox. 1,60 a 1,90 m",h:260,i:360},{category:"Sofá",model:"2 lugares",size:"Grande — aprox. 1,91 a 2,30 m",h:280,i:390},{category:"Sofá",model:"3 lugares",size:"Pequeno — aprox. 2,00 a 2,50 m",h:340,i:450},{category:"Sofá",model:"3 lugares",size:"Grande — aprox. 2,51 a 2,90 m",h:360,i:480},{category:"Sofá",model:"4 lugares",size:"Pequeno — aprox. 2,60 a 3,10 m",h:420,i:540},{category:"Sofá",model:"4 lugares",size:"Grande — aprox. 3,11 a 3,50 m",h:440,i:570},{category:"Sofá",model:"5 lugares",size:"Pequeno — aprox. 3,20 a 3,70 m",h:500,i:630},{category:"Sofá",model:"5 lugares",size:"Grande — aprox. 3,71 a 4,20 m",h:520,i:660},
-{category:"Poltrona",model:"Convencional",size:"Unidade",h:110,i:150},{category:"Poltrona",model:"Grande / decorativa",size:"Unidade",h:130,i:180},{category:"Poltrona",model:"Reclinável / do papai",size:"Unidade",h:160,i:220},{category:"Namoradeira",model:"2 lugares",size:"Unidade",h:220,i:300},{category:"Chaise avulsa",model:"Chaise",size:"Unidade",h:160,i:190},
-{category:"Puff",model:"Pequeno",size:"Unidade",h:30,i:45},{category:"Puff",model:"Grande",size:"Unidade",h:50,i:60},{category:"Puff",model:"Puff-baú",size:"Unidade",h:60,i:75},
-{category:"Cadeira",model:"Somente assento",size:"Unidade",h:35,i:45},{category:"Cadeira",model:"Assento + encosto",size:"Unidade",h:50,i:70},{category:"Cadeira",model:"Totalmente estofada",size:"Unidade",h:70,i:90},{category:"Cadeira",model:"Com braços estofados",size:"Unidade",h:90,i:110},
-{category:"Banco / recamier",model:"Banco / recamier",size:"Até 1,20 m",h:100,i:130},{category:"Banco / recamier",model:"Banco / recamier",size:"1,21 a 1,80 m",h:130,i:170},{category:"Banco / recamier",model:"Banco / recamier",size:"Acima de 1,80 m",h:170,i:220},
-{category:"Cabeceira",model:"Cabeceira estofada",size:"Até 1,40 m",h:100,i:130},{category:"Cabeceira",model:"Cabeceira estofada",size:"1,41 a 1,80 m",h:130,i:170},{category:"Cabeceira",model:"Cabeceira estofada",size:"1,81 a 2,20 m",h:160,i:210},{category:"Cabeceira",model:"Cabeceira estofada",size:"Acima de 2,20 m",h:null,i:null,evaluation:true},
-{category:"Colchão",model:"Solteiro",size:"Padrão solteiro",h:120,i:null,noWaterproof:true},{category:"Colchão",model:"Casal",size:"Padrão casal",h:150,i:null,noWaterproof:true},{category:"Colchão",model:"Queen",size:"Padrão queen",h:180,i:null,noWaterproof:true},{category:"Colchão",model:"King",size:"Padrão king",h:220,i:null,noWaterproof:true},{category:"Colchão",model:"Super King",size:"Padrão super king",h:250,i:null,noWaterproof:true},
-{category:"Box estofado",model:"Solteiro",size:"Padrão solteiro",h:40,i:52},{category:"Box estofado",model:"Casal",size:"Padrão casal",h:55,i:71.5},{category:"Box estofado",model:"Queen",size:"Padrão queen",h:65,i:84.5},{category:"Box estofado",model:"King",size:"Padrão king",h:70,i:91},{category:"Box estofado",model:"Super King",size:"Padrão super king",h:80,i:104}
+{category:"Sofá",model:"2 lugares",size:"Pequeno — aprox. 1,60 a 1,90 m",h:250},{category:"Sofá",model:"2 lugares",size:"Grande — aprox. 1,91 a 2,30 m",h:280},{category:"Sofá",model:"3 lugares",size:"Pequeno — aprox. 2,00 a 2,50 m",h:300},{category:"Sofá",model:"3 lugares",size:"Grande — aprox. 2,51 a 2,90 m",h:330},{category:"Sofá",model:"4 lugares",size:"Pequeno — aprox. 2,60 a 3,10 m",h:350},{category:"Sofá",model:"4 lugares",size:"Grande — aprox. 3,11 a 3,50 m",h:380},{category:"Sofá",model:"5 lugares",size:"Pequeno — aprox. 3,20 a 3,70 m",h:400},{category:"Sofá",model:"5 lugares",size:"Grande — aprox. 3,71 a 4,20 m",h:430},
+{category:"Poltrona",model:"Convencional",size:"Unidade",h:80},{category:"Poltrona",model:"Grande / decorativa",size:"Unidade",h:100},{category:"Poltrona",model:"Reclinável / do papai",size:"Unidade",h:120},{category:"Namoradeira",model:"2 lugares",size:"Unidade",h:180},{category:"Chaise avulsa",model:"Chaise",size:"Unidade",h:160},
+{category:"Puff",model:"Pequeno",size:"Unidade",h:30},{category:"Puff",model:"Grande",size:"Unidade",h:50},{category:"Puff",model:"Puff-baú",size:"Unidade",h:60},
+{category:"Cadeira",model:"Somente assento",size:"Unidade",h:35},{category:"Cadeira",model:"Assento + encosto",size:"Unidade",h:50},{category:"Cadeira",model:"Totalmente estofada",size:"Unidade",h:65},{category:"Cadeira",model:"Com braços estofados",size:"Unidade",h:70},
+{category:"Banco / recamier",model:"Banco / recamier",size:"Até 1,20 m",h:100},{category:"Banco / recamier",model:"Banco / recamier",size:"1,21 a 1,80 m",h:120},{category:"Banco / recamier",model:"Banco / recamier",size:"Acima de 1,80 m",h:170},
+{category:"Cabeceira",model:"Cabeceira estofada",size:"Até 1,40 m",h:100},{category:"Cabeceira",model:"Cabeceira estofada",size:"1,41 a 1,80 m",h:130},{category:"Cabeceira",model:"Cabeceira estofada",size:"1,81 a 2,20 m",h:160},{category:"Cabeceira",model:"Cabeceira estofada",size:"Acima de 2,20 m",h:null,evaluation:true},
+{category:"Colchão",model:"Solteiro",size:"Padrão solteiro",h:120,noWaterproof:true},{category:"Colchão",model:"Casal",size:"Padrão casal",h:220,noWaterproof:true},{category:"Colchão",model:"Queen",size:"Padrão queen",h:250,noWaterproof:true},{category:"Colchão",model:"King",size:"Padrão king",h:280,noWaterproof:true},{category:"Colchão",model:"Super King",size:"Padrão super king",h:300,noWaterproof:true},
+{category:"Box estofado",model:"Solteiro",size:"Padrão solteiro",h:40},{category:"Box estofado",model:"Casal",size:"Padrão casal",h:55},{category:"Box estofado",model:"Queen",size:"Padrão queen",h:65},{category:"Box estofado",model:"King",size:"Padrão king",h:70},{category:"Box estofado",model:"Super King",size:"Padrão super king",h:80}
 ];
+PRICES.forEach(p=>{if(!p.noWaterproof&&!p.evaluation&&p.h!=null)p.i=Number((p.h*1.30).toFixed(2));});
 const serviceNames={h:"Higienização",i:"Impermeabilização",c:"Combo Higienização + Impermeabilização"};
 const els={serviceButtons:[...document.querySelectorAll(".service-btn")],category:document.getElementById("category"),model:document.getElementById("model"),size:document.getElementById("size"),extrasCard:document.getElementById("extrasCard"),extras:[...document.querySelectorAll("#extrasCard input[type=checkbox]")],resultCard:document.getElementById("resultCard"),resultValue:document.getElementById("resultValue"),resultNote:document.getElementById("resultNote"),breakdown:document.getElementById("breakdown"),contactCard:document.getElementById("contactCard"),contactMessage:document.getElementById("contactMessage"),resetBtn:document.getElementById("resetBtn"),rangeHelp:document.getElementById("rangeHelp")};
 let state={service:"",category:"",model:"",size:""};
@@ -66,9 +67,40 @@ function categoriesForService(service){return unique(PRICES.filter(p=>service===
 function updateModels(){const rows=PRICES.filter(p=>p.category===state.category);setOptions(els.model,"Selecione o modelo / configuração",unique(rows.map(p=>p.model)));els.extrasCard.classList.toggle("hidden",state.category!=="Sofá");if(state.category!=="Sofá")clearExtras()}
 function updateSizes(){const rows=PRICES.filter(p=>p.category===state.category&&p.model===state.model);const sizes=unique(rows.map(p=>p.size));setOptions(els.size,"Selecione o tamanho",sizes);if(sizes.length===1){els.size.value=sizes[0];state.size=sizes[0];calculate()}}
 function row(){return PRICES.find(p=>p.category===state.category&&p.model===state.model&&p.size===state.size)}
-function base(r){if(state.service==="h")return r.h;if(state.service==="i")return r.i;if(state.service==="c"){if(r.h==null||r.i==null)return null;return r.h+r.i}return null}
-function extraPct(){return els.extras.filter(x=>x.checked).reduce((s,x)=>s+Number(x.dataset.pct||0),0)}function extraNames(){return els.extras.filter(x=>x.checked).map(x=>x.value)}
-function calculate(){els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden");if(!state.service||!state.category||!state.model||!state.size)return;const r=row();if(!r)return;if(r.evaluation){els.contactMessage.textContent="Esta configuração exige avaliação manual da TS Clean antes de informar o valor.";els.contactCard.classList.remove("hidden");return}if(r.noWaterproof&&(state.service==="i"||state.service==="c")){els.contactMessage.textContent="Colchões não possuem valor padrão de impermeabilização. Entre em contato com a TS Clean para entender a necessidade e definir como o serviço deverá ser feito.";els.contactCard.classList.remove("hidden");return}const b=base(r);if(b==null){els.contactMessage.textContent="Este item precisa de avaliação da TS Clean antes de informar o valor.";els.contactCard.classList.remove("hidden");return}const pct=state.category==="Sofá"?extraPct():0,extra=b*(pct/100),final=b+extra;els.resultValue.textContent=brl(final);els.resultNote.textContent=`${serviceNames[state.service]} • ${r.category} • ${r.model}`;const lines=[];if(state.service==="c"){lines.push(`<div class="break-row"><span>Higienização</span><strong>${brl(r.h)}</strong></div>`);lines.push(`<div class="break-row"><span>Impermeabilização</span><strong>${brl(r.i)}</strong></div>`)}else{lines.push(`<div class="break-row"><span>Valor-base</span><strong>${brl(b)}</strong></div>`)}if(pct>0)lines.push(`<div class="break-row"><span>Adicionais (${extraNames().join(", ")})</span><strong>+${pct}% = ${brl(extra)}</strong></div>`);if(r.category==="Box estofado"&&state.service==="i")lines.push(`<div class="break-row"><span>Regra do box</span><strong>Higienização + 30%</strong></div>`);lines.push(`<div class="break-row"><span>Tamanho</span><strong>${esc(r.size)}</strong></div>`);els.breakdown.innerHTML=lines.join("");els.resultCard.classList.remove("hidden")}
+function extraPct(){return els.extras.filter(x=>x.checked).reduce((s,x)=>s+Number(x.dataset.pct||0),0)}
+function extraNames(){return els.extras.filter(x=>x.checked).map(x=>x.value)}
+function roundComboDown(value){return Math.floor(value/50)*50}
+function calculate(){
+  els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden");
+  if(!state.service||!state.category||!state.model||!state.size)return;
+  const r=row();if(!r)return;
+  if(r.evaluation){els.contactMessage.textContent="Esta configuração exige avaliação manual da TS Clean antes de informar o valor.";els.contactCard.classList.remove("hidden");return}
+  if(r.noWaterproof&&(state.service==="i"||state.service==="c")){els.contactMessage.textContent="Colchões não possuem valor padrão de impermeabilização. Entre em contato com a TS Clean para entender a necessidade e definir como o serviço deverá ser feito.";els.contactCard.classList.remove("hidden");return}
+  const pct=state.category==="Sofá"?extraPct():0;
+  const multiplier=1+(pct/100);
+  let final=0;const lines=[];
+  if(state.service==="h"||state.service==="i"){
+    const b=state.service==="h"?r.h:r.i;if(b==null)return;
+    const extra=b*(pct/100);final=b+extra;
+    lines.push(`<div class="break-row"><span>Valor-base</span><strong>${brl(b)}</strong></div>`);
+    if(state.service==="i")lines.push(`<div class="break-row"><span>Regra da impermeabilização</span><strong>Higienização + 30%</strong></div>`);
+    if(pct>0)lines.push(`<div class="break-row"><span>Adicionais (${extraNames().join(", ")})</span><strong>+${pct}% = ${brl(extra)}</strong></div>`);
+  }else{
+    const h=r.h,i=r.i;if(h==null||i==null)return;
+    const subtotal=(h+i)*multiplier;
+    const discounted=subtotal*0.90;
+    final=roundComboDown(discounted);
+    lines.push(`<div class="break-row"><span>Higienização</span><strong>${brl(h)}</strong></div>`);
+    lines.push(`<div class="break-row"><span>Impermeabilização (+30%)</span><strong>${brl(i)}</strong></div>`);
+    if(pct>0)lines.push(`<div class="break-row"><span>Adicionais (${extraNames().join(", ")})</span><strong>+${pct}%</strong></div>`);
+    lines.push(`<div class="break-row"><span>Subtotal</span><strong>${brl(subtotal)}</strong></div>`);
+    lines.push(`<div class="break-row"><span>Desconto do combo</span><strong>-10%</strong></div>`);
+    lines.push(`<div class="break-row"><span>Após desconto</span><strong>${brl(discounted)}</strong></div>`);
+    lines.push(`<div class="break-row"><span>Arredondamento</span><strong>↓ múltiplo de R$ 50</strong></div>`);
+  }
+  lines.push(`<div class="break-row"><span>Tamanho</span><strong>${esc(r.size)}</strong></div>`);
+  els.resultValue.textContent=brl(final);els.resultNote.textContent=`${serviceNames[state.service]} • ${r.category} • ${r.model}`;els.breakdown.innerHTML=lines.join("");els.resultCard.classList.remove("hidden")
+}
 els.serviceButtons.forEach(btn=>btn.addEventListener("click",()=>{els.serviceButtons.forEach(b=>b.classList.remove("active"));btn.classList.add("active");state={service:btn.dataset.service,category:"",model:"",size:""};setOptions(els.category,"Selecione o tipo de estofado",categoriesForService(state.service));setOptions(els.model,"Selecione o tipo de estofado",[]);setOptions(els.size,"Selecione o modelo",[]);clearExtras();els.extrasCard.classList.add("hidden");els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden");els.rangeHelp.textContent=""}));
 els.category.addEventListener("change",e=>{state.category=e.target.value;state.model=state.size="";updateModels();setOptions(els.size,"Selecione o modelo",[]);els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden")});
 els.model.addEventListener("change",e=>{state.model=e.target.value;state.size="";updateSizes();els.resultCard.classList.add("hidden");els.contactCard.classList.add("hidden")});
